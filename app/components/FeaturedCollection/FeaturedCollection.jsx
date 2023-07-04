@@ -28,7 +28,7 @@ const FeaturedCollection = () => {
     return (
         <div className="mt-[258px] container">
             <h1 className="text-[44px] text-center mb-[65px]">Featured Collections</h1>
-            <div className=''>
+            <div className='mb-[65px]'>
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={30}
@@ -259,6 +259,7 @@ const FeaturedCollection = () => {
                     </SwiperSlide>
                 </Swiper>
             </div>
+            <button className='button flex justify-center mx-auto'>Explore All Collection</button>
         </div>
     );
 };
