@@ -7,19 +7,32 @@ import sizes from './images/sizes.png'
 
 const MetalDescription = () => {
     return (
-        <div className="mt-[140px] container text-center">
-            <h1 className="text-[44px]">Metal Prints Description here</h1>
+        <div className="mt-[140px] container">
+            <h1 className="text-[44px] text-center">Metal Prints Description here</h1>
             <div className='flex items-center gap-[115px] mt-[65px]'>
                 <div>
-                    <div className='bg-[#ffffff0d] p-[18px] rounded-2xl w-[569px] h-[612px]'>
+                    <div className='bg-[#ffffff0d] p-[18px] rounded-2xl w-[569px] h-[612px] relative'>
                         <Image
                             src={spider.src}
                             width={spider.width}
                             height={spider.height}
                         />
+                        <div className='absolute bottom-10 left-10'>
+                            <h3 className='text-[22px]'>Puerto Rico Spider</h3>
+                            <h4 className='text-base'>Krishnaprasad.eth</h4>
+                            <p className='text-sm'>NFT Address:</p>
+                            <div className='flex justify-between items-center]'>
+                                <p className='text-xs'>oxb794f5ca0ba39494cc83961300ca742795268</p>
+                                <p className='text-sm absolute -right-56'>Certified NFT | Galleria</p>
+                            </div>
+                            <div className='flex justify-between items-center'>
+                                <p className='text-sm'>TokenID: 467</p>
+                                <p className='text-xs absolute -right-56'>Thegalleria.io</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className='grid grid-cols-2 gap-[46px]'>
+                <div className='grid grid-cols-2 gap-[46px] text-center'>
                     <div className='w-[296px] h-[283px] px-6 py-10 bg-[#ffffff0d] rounded-2xl grid items-center'>
 
                         <div className='bg-[#ffffff1a] w-[82px] h-[82px] rounded-full grid items-center mx-auto mb-5'>
