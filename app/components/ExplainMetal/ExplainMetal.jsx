@@ -1,11 +1,9 @@
 "use client"
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
-
 
 import Image from 'next/image'
 import roses from './images/roses.png'
@@ -17,7 +15,7 @@ import image3 from './images/image_3.png'
 
 const ExplainMetal = () => {
     return (
-        <div className="container mt-[144px] mb-[144px]">
+        <div className="container mt-[144px]">
             <div className="flex justify-between items-center mb-[65px]">
                 <h1 className="text-[44px]">
                     Explain what the metal prints
@@ -40,7 +38,7 @@ const ExplainMetal = () => {
                 {/* SLIDE ONE */}
 
                 <SwiperSlide>
-                    <div className='flex justify-center gap-[44px]'>
+                    <div className='flex justify-center gap-[44px] p-8'>
                         <div className='bg-[#ffffff0d] p-[18px] rounded-2xl w-[410px] h-[468px]'>
                             <div className='mb-4 relative'>
                                 <Image
@@ -105,7 +103,7 @@ const ExplainMetal = () => {
                 {/* SLIDE tWO */}
 
                 <SwiperSlide>
-                    <div className='flex justify-center gap-[44px]'>
+                    <div className='flex justify-center gap-[44px] p-8'>
                         <div className='bg-[#ffffff0d] p-[18px] rounded-2xl w-[410px] h-[468px]'>
                             <div className='mb-4 relative'>
                                 <Image

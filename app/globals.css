@@ -43,6 +43,7 @@
   height: 56px;
   color: #FFFFFF;
   padding-right: 5px;
+  margin-left: -4px;
 }
 .mySwiper .swiper-button-next {
   border-radius: 56px;
@@ -53,6 +54,7 @@
   height: 56px;
   color: #FFFFFF;
   padding-left: 5px;
+  margin-left: -4px;
 }
 .mySwiper .swiper-button-prev:hover{
   border-radius: 56px;
