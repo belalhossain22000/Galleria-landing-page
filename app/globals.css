@@ -48,6 +48,13 @@
   @apply bg-gradient-to-r from-[#9215C5] to-[#3116D2] font-medium rounded-full py-[20px] px-[40px] inline-block transition hover:scale-[1.05];
 }
 
+.btn_sm{
+  @apply border rounded-full py-[14px] px-[32px] text-base inline-block transition hover:scale-[1.05];
+}
+.btn_sm:hover{
+  @apply bg-gradient-to-r from-[#9215C5] to-[#3116D2] text-base font-medium rounded-full py-[14px] px-[32px] inline-block transition hover:scale-[1.05] border-0;
+}
+
 
 /* .header-btn {
   display: inline-flex;
@@ -77,11 +84,6 @@
   border-radius: inherit;
   background: linear-gradient(to right, #9215C5, #3116D2);
 } */
-.button {
-  border-radius: 1000px;
-  background: var(--gradient-2, linear-gradient(90deg, #D116BF 0%, #3016D1 100%));
-  padding: 18px 40px;
-}
 
 .mySwiper .swiper-button-prev{
   border-radius: 56px;

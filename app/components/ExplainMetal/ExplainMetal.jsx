@@ -12,6 +12,7 @@ import building from './images/building.png'
 import image1 from './images/image_1.png'
 import image2 from './images/image_2.png'
 import image3 from './images/image_3.png'
+import Link from 'next/link';
 
 const ExplainMetal = () => {
     return (
@@ -20,7 +21,7 @@ const ExplainMetal = () => {
                 <h1 className="text-[44px]">
                     Explain what the metal prints
                 </h1>
-                <h3 className="button">Explore All Collection</h3>
+                <Link href='/' className="primary-btn">Explore All Collection</Link>
             </div>
 
             <Swiper

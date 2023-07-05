@@ -22,6 +22,7 @@ import image10 from './images/blue_smoke/image_5.png'
 
 import { AiFillHeart } from "react-icons/ai";
 import { BsCheck } from "react-icons/bs";
+import Link from 'next/link';
 
 
 const FeaturedCollection = () => {
@@ -259,7 +260,9 @@ const FeaturedCollection = () => {
                     </SwiperSlide>
                 </Swiper>
             </div>
-            <button className='button flex justify-center mx-auto'>Explore All Collection</button>
+            <div className='flex justify-center'>
+                <Link href='/' className="primary-btn">Explore All Collection</Link>
+            </div>
         </div>
     );
 };
