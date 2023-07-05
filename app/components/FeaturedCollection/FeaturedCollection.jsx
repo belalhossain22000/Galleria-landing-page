@@ -27,238 +27,493 @@ import Link from 'next/link';
 
 const FeaturedCollection = () => {
     return (
-        <div className="mt-[258px] container">
-            <h1 className="text-[44px] text-center mb-[65px]">Featured Collections</h1>
-            <div className='mb-[65px]'>
-                <Swiper
-                    slidesPerView={1}
-                    spaceBetween={30}
-                    loop={true}
-                    // pagination={{
-                    //     clickable: true,
-                    // }}
-                    navigation={true}
-                    modules={[Pagination, Navigation]}
-                    className="mySwiper"
-                >
+        <div className="mt-[118px] md:mt-[258px] container">
+            <h1 className="text-3xl md:text-[44px] text-center mb-[30px] md:mb-[65px]">Featured Collections</h1>
+            <div className='mb-[30px] md:mb-[65px]'>
 
-                    {/* SLIDE ONE */}
+                {/* DESKTOP DEVICE */}
 
-                    <SwiperSlide>
-                        <div className='flex justify-center gap-[44px]'>
-                            <div className='bg-[#ffffff0d] p-[30px] rounded-[14px]'>
-                                <div className='flex justify-between items-center'>
-                                    <div className='flex items-center gap-[14px]'>
-                                        <div className='relative'>
+                <div className='hidden md:flex'>
+                    <Swiper
+                        slidesPerView={2}
+                        spaceBetween={30}
+                        loop={true}
+                        // pagination={{
+                        //     clickable: true,
+                        // }}
+                        navigation={true}
+                        modules={[Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+
+                        {/* SLIDE ONE */}
+
+                        <SwiperSlide>
+                            <div className='flex justify-center gap-[44px]'>
+                                <div className='bg-[#ffffff0d] p-[30px] rounded-[14px]'>
+                                    <div className='flex justify-between items-center'>
+                                        <div className='flex items-center gap-[14px]'>
+                                            <div className='relative'>
+                                                <Image
+                                                    src={profile1.src}
+                                                    width={profile1.width}
+                                                    height={profile1.height}
+                                                />
+                                                <BsCheck className='bg-[#2BC927] rounded-full absolute bottom-0 right-0'></BsCheck>
+                                            </div>
+                                            <div className='grid gap-[6px]'>
+                                                <h2 className='text-[30px]'>Caucasian Beauty</h2>
+                                                <p>@GAlleria.456</p>
+                                            </div>
+                                        </div>
+                                        <p className='bg-white px-[17px] py-[6px] text-black rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 120</p>
+                                    </div>
+                                    <div className='grid gap-5 mt-6'>
+                                        <div className='flex gap-[15px]'>
                                             <Image
-                                                src={profile1.src}
-                                                width={profile1.width}
-                                                height={profile1.height}
+                                                src={image1.src}
+                                                width={image1.width}
+                                                height={image1.height}
                                             />
-                                            <BsCheck className='bg-[#2BC927] rounded-full absolute bottom-0 right-0'></BsCheck>
+                                            <Image
+                                                src={image2.src}
+                                                width={image2.width}
+                                                height={image2.height}
+                                            />
+                                            <Image
+                                                src={image3.src}
+                                                width={image3.width}
+                                                height={image3.height}
+                                            />
                                         </div>
-                                        <div className='grid gap-[6px]'>
-                                            <h2 className='text-[30px]'>Caucasian Beauty</h2>
-                                            <p>@GAlleria.456</p>
+                                        <div className='flex gap-5'>
+                                            <Image
+                                                src={image4.src}
+                                                width={image4.width}
+                                                height={image4.height}
+                                            />
+                                            <Image
+                                                src={image5.src}
+                                                width={image5.width}
+                                                height={image5.height}
+                                            />
                                         </div>
-                                    </div>
-                                    <p className='bg-white px-[17px] py-[6px] text-black rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 120</p>
-                                </div>
-                                <div className='grid gap-5 mt-6'>
-                                    <div className='flex gap-[15px]'>
-                                        <Image
-                                            src={image1.src}
-                                            width={image1.width}
-                                            height={image1.height}
-                                        />
-                                        <Image
-                                            src={image2.src}
-                                            width={image2.width}
-                                            height={image2.height}
-                                        />
-                                        <Image
-                                            src={image3.src}
-                                            width={image3.width}
-                                            height={image3.height}
-                                        />
-                                    </div>
-                                    <div className='flex gap-5'>
-                                        <Image
-                                            src={image4.src}
-                                            width={image4.width}
-                                            height={image4.height}
-                                        />
-                                        <Image
-                                            src={image5.src}
-                                            width={image5.width}
-                                            height={image5.height}
-                                        />
                                     </div>
                                 </div>
                             </div>
+                        </SwiperSlide>
 
-                            <div className='bg-[#ffffff0d] p-[30px] rounded-[14px]'>
-                                <div className='flex justify-between items-center'>
-                                    <div className='flex items-center gap-[14px]'>
-                                        <div className='relative'>
+
+                        {/* SLIDE tWO */}
+
+                        <SwiperSlide>
+                            <div className='flex justify-center gap-[44px]'>
+                                <div className='bg-[#ffffff0d] p-[30px] rounded-[14px]'>
+                                    <div className='flex justify-between items-center'>
+                                        <div className='flex items-center gap-[14px]'>
+                                            <div className='relative'>
+                                                <Image
+                                                    src={profile2.src}
+                                                    width={profile2.width}
+                                                    height={profile2.height}
+                                                />
+                                                <BsCheck className='bg-[#2BC927] rounded-full absolute bottom-0 right-0'></BsCheck>
+                                            </div>
+                                            <div className='grid gap-[6px]'>
+                                                <h2 className='text-[30px]'>Caucasian Beauty</h2>
+                                                <p>@GAlleria.456</p>
+                                            </div>
+                                        </div>
+                                        <p className='bg-white px-[17px] py-[6px] text-black rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 120</p>
+                                    </div>
+                                    <div className='grid gap-5 mt-6'>
+                                        <div className='flex gap-5'>
                                             <Image
-                                                src={profile2.src}
-                                                width={profile2.width}
-                                                height={profile2.height}
+                                                src={image6.src}
+                                                width={image6.width}
+                                                height={image6.height}
                                             />
-                                            <BsCheck className='bg-[#2BC927] rounded-full absolute bottom-0 right-0'></BsCheck>
+                                            <Image
+                                                src={image7.src}
+                                                width={image7.width}
+                                                height={image7.height}
+                                            />
                                         </div>
-                                        <div className='grid gap-[6px]'>
-                                            <h2 className='text-[30px]'>Caucasian Beauty</h2>
-                                            <p>@GAlleria.456</p>
+                                        <div className='flex gap-[15px]'>
+                                            <Image
+                                                src={image8.src}
+                                                width={image8.width}
+                                                height={image8.height}
+                                            />
+                                            <Image
+                                                src={image9.src}
+                                                width={image9.width}
+                                                height={image9.height}
+                                            />
+                                            <Image
+                                                src={image10.src}
+                                                width={image10.width}
+                                                height={image10.height}
+                                            />
                                         </div>
-                                    </div>
-                                    <p className='bg-white px-[17px] py-[6px] text-black rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 120</p>
-                                </div>
-                                <div className='grid gap-5 mt-6'>
-                                    <div className='flex gap-5'>
-                                        <Image
-                                            src={image6.src}
-                                            width={image6.width}
-                                            height={image6.height}
-                                        />
-                                        <Image
-                                            src={image7.src}
-                                            width={image7.width}
-                                            height={image7.height}
-                                        />
-                                    </div>
-                                    <div className='flex gap-[15px]'>
-                                        <Image
-                                            src={image8.src}
-                                            width={image8.width}
-                                            height={image8.height}
-                                        />
-                                        <Image
-                                            src={image9.src}
-                                            width={image9.width}
-                                            height={image9.height}
-                                        />
-                                        <Image
-                                            src={image10.src}
-                                            width={image10.width}
-                                            height={image10.height}
-                                        />
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </SwiperSlide>
+                        </SwiperSlide>
 
+                        {/* SLIDE THREE */}
 
-                    {/* SLIDE tWO */}
-
-                    <SwiperSlide>
-                        <div className='flex justify-center gap-[44px]'>
-                            <div className='bg-[#ffffff0d] p-[30px] rounded-[14px]'>
-                                <div className='flex justify-between items-center'>
-                                    <div className='flex items-center gap-[14px]'>
-                                        <div className='relative'>
+                        <SwiperSlide>
+                            <div className='flex justify-center gap-[44px]'>
+                                <div className='bg-[#ffffff0d] p-[30px] rounded-[14px]'>
+                                    <div className='flex justify-between items-center'>
+                                        <div className='flex items-center gap-[14px]'>
+                                            <div className='relative'>
+                                                <Image
+                                                    src={profile1.src}
+                                                    width={profile1.width}
+                                                    height={profile1.height}
+                                                />
+                                                <BsCheck className='bg-[#2BC927] rounded-full absolute bottom-0 right-0'></BsCheck>
+                                            </div>
+                                            <div className='grid gap-[6px]'>
+                                                <h2 className='text-[30px]'>Caucasian Beauty</h2>
+                                                <p>@GAlleria.456</p>
+                                            </div>
+                                        </div>
+                                        <p className='bg-white px-[17px] py-[6px] text-black rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 120</p>
+                                    </div>
+                                    <div className='grid gap-5 mt-6'>
+                                        <div className='flex gap-[15px]'>
                                             <Image
-                                                src={profile1.src}
-                                                width={profile1.width}
-                                                height={profile1.height}
+                                                src={image1.src}
+                                                width={image1.width}
+                                                height={image1.height}
                                             />
-                                            <BsCheck className='bg-[#2BC927] rounded-full absolute bottom-0 right-0'></BsCheck>
+                                            <Image
+                                                src={image2.src}
+                                                width={image2.width}
+                                                height={image2.height}
+                                            />
+                                            <Image
+                                                src={image3.src}
+                                                width={image3.width}
+                                                height={image3.height}
+                                            />
                                         </div>
-                                        <div className='grid gap-[6px]'>
-                                            <h2 className='text-[30px]'>Caucasian Beauty</h2>
-                                            <p>@GAlleria.456</p>
+                                        <div className='flex gap-5'>
+                                            <Image
+                                                src={image4.src}
+                                                width={image4.width}
+                                                height={image4.height}
+                                            />
+                                            <Image
+                                                src={image5.src}
+                                                width={image5.width}
+                                                height={image5.height}
+                                            />
                                         </div>
-                                    </div>
-                                    <p className='bg-white px-[17px] py-[6px] text-black rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 120</p>
-                                </div>
-                                <div className='grid gap-5 mt-6'>
-                                    <div className='flex gap-[15px]'>
-                                        <Image
-                                            src={image1.src}
-                                            width={image1.width}
-                                            height={image1.height}
-                                        />
-                                        <Image
-                                            src={image2.src}
-                                            width={image2.width}
-                                            height={image2.height}
-                                        />
-                                        <Image
-                                            src={image3.src}
-                                            width={image3.width}
-                                            height={image3.height}
-                                        />
-                                    </div>
-                                    <div className='flex gap-5'>
-                                        <Image
-                                            src={image4.src}
-                                            width={image4.width}
-                                            height={image4.height}
-                                        />
-                                        <Image
-                                            src={image5.src}
-                                            width={image5.width}
-                                            height={image5.height}
-                                        />
                                     </div>
                                 </div>
                             </div>
+                        </SwiperSlide>
 
-                            <div className='bg-[#ffffff0d] p-[30px] rounded-[14px]'>
-                                <div className='flex justify-between items-center'>
-                                    <div className='flex items-center gap-[14px]'>
-                                        <div className='relative'>
+                        {/* SLIDE FOUR */}
+
+                        <SwiperSlide>
+                            <div className='flex justify-center gap-[44px]'>
+                                <div className='bg-[#ffffff0d] p-[30px] rounded-[14px]'>
+                                    <div className='flex justify-between items-center'>
+                                        <div className='flex items-center gap-[14px]'>
+                                            <div className='relative'>
+                                                <Image
+                                                    src={profile2.src}
+                                                    width={profile2.width}
+                                                    height={profile2.height}
+                                                />
+                                                <BsCheck className='bg-[#2BC927] rounded-full absolute bottom-0 right-0'></BsCheck>
+                                            </div>
+                                            <div className='grid gap-[6px]'>
+                                                <h2 className='text-[30px]'>Caucasian Beauty</h2>
+                                                <p>@GAlleria.456</p>
+                                            </div>
+                                        </div>
+                                        <p className='bg-white px-[17px] py-[6px] text-black rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 120</p>
+                                    </div>
+                                    <div className='grid gap-5 mt-6'>
+                                        <div className='flex gap-5'>
                                             <Image
-                                                src={profile2.src}
-                                                width={profile2.width}
-                                                height={profile2.height}
+                                                src={image6.src}
+                                                width={image6.width}
+                                                height={image6.height}
                                             />
-                                            <BsCheck className='bg-[#2BC927] rounded-full absolute bottom-0 right-0'></BsCheck>
+                                            <Image
+                                                src={image7.src}
+                                                width={image7.width}
+                                                height={image7.height}
+                                            />
                                         </div>
-                                        <div className='grid gap-[6px]'>
-                                            <h2 className='text-[30px]'>Caucasian Beauty</h2>
-                                            <p>@GAlleria.456</p>
+                                        <div className='flex gap-[15px]'>
+                                            <Image
+                                                src={image8.src}
+                                                width={image8.width}
+                                                height={image8.height}
+                                            />
+                                            <Image
+                                                src={image9.src}
+                                                width={image9.width}
+                                                height={image9.height}
+                                            />
+                                            <Image
+                                                src={image10.src}
+                                                width={image10.width}
+                                                height={image10.height}
+                                            />
                                         </div>
-                                    </div>
-                                    <p className='bg-white px-[17px] py-[6px] text-black rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 120</p>
-                                </div>
-                                <div className='grid gap-5 mt-6'>
-                                    <div className='flex gap-5'>
-                                        <Image
-                                            src={image6.src}
-                                            width={image6.width}
-                                            height={image6.height}
-                                        />
-                                        <Image
-                                            src={image7.src}
-                                            width={image7.width}
-                                            height={image7.height}
-                                        />
-                                    </div>
-                                    <div className='flex gap-[15px]'>
-                                        <Image
-                                            src={image8.src}
-                                            width={image8.width}
-                                            height={image8.height}
-                                        />
-                                        <Image
-                                            src={image9.src}
-                                            width={image9.width}
-                                            height={image9.height}
-                                        />
-                                        <Image
-                                            src={image10.src}
-                                            width={image10.width}
-                                            height={image10.height}
-                                        />
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </SwiperSlide>
-                </Swiper>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+
+                {/* MOBILE DEVICE */}
+
+                <div className='md:hidden'>
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        loop={true}
+                        // pagination={{
+                        //     clickable: true,
+                        // }}
+                        navigation={true}
+                        modules={[Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+
+                        {/* SLIDE ONE */}
+
+                        <SwiperSlide>
+                                <div className='bg-[#ffffff0d] p-[30px] rounded-[14px]'>
+                                    <div className='flex justify-between items-center'>
+                                        <div className='flex items-center gap-[14px]'>
+                                            <div className='relative'>
+                                                <Image
+                                                    src={profile1.src}
+                                                    width={profile1.width}
+                                                    height={profile1.height}
+                                                />
+                                                <BsCheck className='bg-[#2BC927] rounded-full absolute bottom-0 right-0'></BsCheck>
+                                            </div>
+                                            <div className='grid gap-[6px]'>
+                                                <h2 className='md:text-[30px]'>Caucasian Beauty</h2>
+                                                <p className='text-xs'>@GAlleria.456</p>
+                                            </div>
+                                        </div>
+                                        <p className='bg-white px-[17px] py-[6px] text-black rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 120</p>
+                                    </div>
+                                    <div className='grid gap-5 mt-6'>
+                                        <div className='flex gap-[15px]'>
+                                            <Image
+                                                src={image1.src}
+                                                width={image1.width}
+                                                height={image1.height}
+                                            />
+                                            <Image
+                                                src={image2.src}
+                                                width={image2.width}
+                                                height={image2.height}
+                                            />
+                                            <Image
+                                                src={image3.src}
+                                                width={image3.width}
+                                                height={image3.height}
+                                            />
+                                        </div>
+                                        <div className='flex gap-5'>
+                                            <Image
+                                                src={image4.src}
+                                                width={image4.width}
+                                                height={image4.height}
+                                            />
+                                            <Image
+                                                src={image5.src}
+                                                width={image5.width}
+                                                height={image5.height}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                        </SwiperSlide>
+
+
+                        {/* SLIDE tWO */}
+
+                        <SwiperSlide>
+                                <div className='bg-[#ffffff0d] p-[30px] rounded-[14px]'>
+                                    <div className='flex justify-between items-center'>
+                                        <div className='flex items-center gap-[14px]'>
+                                            <div className='relative'>
+                                                <Image
+                                                    src={profile2.src}
+                                                    width={profile2.width}
+                                                    height={profile2.height}
+                                                />
+                                                <BsCheck className='bg-[#2BC927] rounded-full absolute bottom-0 right-0'></BsCheck>
+                                            </div>
+                                            <div className='grid gap-[6px]'>
+                                                <h2 className='md:text-[30px]'>Caucasian Beauty</h2>
+                                                <p className='text-xs'>@GAlleria.456</p>
+                                            </div>
+                                        </div>
+                                        <p className='bg-white px-[17px] py-[6px] text-black rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 120</p>
+                                    </div>
+                                    <div className='grid gap-5 mt-6'>
+                                        <div className='flex gap-5'>
+                                            <Image
+                                                src={image6.src}
+                                                width={image6.width}
+                                                height={image6.height}
+                                            />
+                                            <Image
+                                                src={image7.src}
+                                                width={image7.width}
+                                                height={image7.height}
+                                            />
+                                        </div>
+                                        <div className='flex gap-[15px]'>
+                                            <Image
+                                                src={image8.src}
+                                                width={image8.width}
+                                                height={image8.height}
+                                            />
+                                            <Image
+                                                src={image9.src}
+                                                width={image9.width}
+                                                height={image9.height}
+                                            />
+                                            <Image
+                                                src={image10.src}
+                                                width={image10.width}
+                                                height={image10.height}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                        </SwiperSlide>
+
+                        {/* SLIDE THREE */}
+
+                        <SwiperSlide>
+                                <div className='bg-[#ffffff0d] p-[30px] rounded-[14px]'>
+                                    <div className='flex justify-between items-center'>
+                                        <div className='flex items-center gap-[14px]'>
+                                            <div className='relative'>
+                                                <Image
+                                                    src={profile1.src}
+                                                    width={profile1.width}
+                                                    height={profile1.height}
+                                                />
+                                                <BsCheck className='bg-[#2BC927] rounded-full absolute bottom-0 right-0'></BsCheck>
+                                            </div>
+                                            <div className='grid gap-[6px]'>
+                                                <h2 className='md:text-[30px]'>Caucasian Beauty</h2>
+                                                <p className='text-xs'>@GAlleria.456</p>
+                                            </div>
+                                        </div>
+                                        <p className='bg-white px-[17px] py-[6px] text-black rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 120</p>
+                                    </div>
+                                    <div className='grid gap-5 mt-6'>
+                                        <div className='flex gap-[15px]'>
+                                            <Image
+                                                src={image1.src}
+                                                width={image1.width}
+                                                height={image1.height}
+                                            />
+                                            <Image
+                                                src={image2.src}
+                                                width={image2.width}
+                                                height={image2.height}
+                                            />
+                                            <Image
+                                                src={image3.src}
+                                                width={image3.width}
+                                                height={image3.height}
+                                            />
+                                        </div>
+                                        <div className='flex gap-5'>
+                                            <Image
+                                                src={image4.src}
+                                                width={image4.width}
+                                                height={image4.height}
+                                            />
+                                            <Image
+                                                src={image5.src}
+                                                width={image5.width}
+                                                height={image5.height}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                        </SwiperSlide>
+
+                        {/* SLIDE FOUR */}
+
+                        <SwiperSlide>
+                                <div className='bg-[#ffffff0d] p-[30px] rounded-[14px]'>
+                                    <div className='flex justify-between items-center'>
+                                        <div className='flex items-center gap-[14px]'>
+                                            <div className='relative'>
+                                                <Image
+                                                    src={profile2.src}
+                                                    width={profile2.width}
+                                                    height={profile2.height}
+                                                />
+                                                <BsCheck className='bg-[#2BC927] rounded-full absolute bottom-0 right-0'></BsCheck>
+                                            </div>
+                                            <div className='grid gap-[6px]'>
+                                                <h2 className='md:text-[30px]'>Caucasian Beauty</h2>
+                                                <p className='text-xs'>@GAlleria.456</p>
+                                            </div>
+                                        </div>
+                                        <p className='bg-white px-[17px] py-[6px] text-black rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 120</p>
+                                    </div>
+                                    <div className='grid gap-5 mt-6'>
+                                        <div className='flex gap-5'>
+                                            <Image
+                                                src={image6.src}
+                                                width={image6.width}
+                                                height={image6.height}
+                                            />
+                                            <Image
+                                                src={image7.src}
+                                                width={image7.width}
+                                                height={image7.height}
+                                            />
+                                        </div>
+                                        <div className='flex gap-[15px]'>
+                                            <Image
+                                                src={image8.src}
+                                                width={image8.width}
+                                                height={image8.height}
+                                            />
+                                            <Image
+                                                src={image9.src}
+                                                width={image9.width}
+                                                height={image9.height}
+                                            />
+                                            <Image
+                                                src={image10.src}
+                                                width={image10.width}
+                                                height={image10.height}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
             </div>
             <div className='flex justify-center'>
                 <Link href='/' className="primary-btn">Explore All Collection</Link>

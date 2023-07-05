@@ -14,7 +14,7 @@ const HomePage = () => {
       <Brands/> */}
       <MetalDescription/>
       <ExplainMetal/>
-      {/* <FeaturedCollection/> */}
+      <FeaturedCollection/>
       {/* <FeaturedNfts></FeaturedNfts> */}
       {/* <Categories/> */}
     </div>
