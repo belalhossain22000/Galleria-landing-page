@@ -10,13 +10,13 @@ import FeaturedNfts from './components/FeaturedNfts/FeaturedNfts'
 const HomePage = () => {
   return (
     <div>
-      <Banner/>
-      <Brands/>
+      {/* <Banner/>
+      <Brands/> */}
       <MetalDescription/>
-      <ExplainMetal/>
+      {/* <ExplainMetal/>
       <FeaturedCollection/>
       <FeaturedNfts></FeaturedNfts>
-      <Categories/>
+      <Categories/> */}
     </div>
   )
 }
