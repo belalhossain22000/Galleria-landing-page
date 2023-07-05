@@ -13,10 +13,10 @@ const HomePage = () => {
       {/* <Banner/>
       <Brands/> */}
       <MetalDescription/>
-      {/* <ExplainMetal/>
-      <FeaturedCollection/>
-      <FeaturedNfts></FeaturedNfts>
-      <Categories/> */}
+      <ExplainMetal/>
+      {/* <FeaturedCollection/> */}
+      {/* <FeaturedNfts></FeaturedNfts> */}
+      {/* <Categories/> */}
     </div>
   )
 }
