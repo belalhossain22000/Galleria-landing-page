@@ -77,3 +77,51 @@
   border-radius: inherit;
   background: linear-gradient(to right, #9215C5, #3116D2);
 } */
+.button {
+  border-radius: 1000px;
+  background: var(--gradient-2, linear-gradient(90deg, #D116BF 0%, #3016D1 100%));
+  padding: 18px 40px;
+}
+
+.mySwiper .swiper-button-prev{
+  border-radius: 56px;
+  border: #E7F0FB;
+  background: linear-gradient(131deg, rgba(255, 255, 255, 0.69) 0%, rgba(255, 255, 255, 0.55) 100%);
+  backdrop-filter: blur(25px);
+  width: 56px;
+  height: 56px;
+  color: #FFFFFF;
+  padding-right: 5px;
+  margin-left: -4px;
+}
+.mySwiper .swiper-button-next {
+  border-radius: 56px;
+  border: #E7F0FB;
+  background: linear-gradient(131deg, rgba(255, 255, 255, 0.69) 0%, rgba(255, 255, 255, 0.55) 100%);
+  backdrop-filter: blur(25px);
+  width: 56px;
+  height: 56px;
+  color: #FFFFFF;
+  padding-left: 5px;
+  margin-left: -4px;
+}
+.mySwiper .swiper-button-prev:hover{
+  border-radius: 56px;
+  background: var(--p-5, linear-gradient(90deg, #D116BF 0%, #3016D1 100%));
+  backdrop-filter: blur(25px);
+  width: 56px;
+  height: 56px;
+  color: #FFFFFF;
+  padding-right: 5px;
+}
+.mySwiper .swiper-button-next:hover{
+  border-radius: 56px;
+  background: var(--p-5, linear-gradient(90deg, #D116BF 0%, #3016D1 100%));
+  backdrop-filter: blur(25px);
+  width: 56px;
+  height: 56px;
+  color: #FFFFFF;
+  padding-left: 5px;
+}
+
+
