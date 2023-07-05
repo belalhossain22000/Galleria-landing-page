@@ -14,7 +14,7 @@ const Categories = () => {
     return (
         <div className='container mt-[140px] text-center'>
             <h1 className='text-[44px]'>Categories</h1>
-            <div className='mt-[65px] grid grid-cols-5 gap-[40px]'>
+            <div className='mt-[65px] grid md:grid-cols-3 lg:grid-cols-5 gap-[40px]'>
                 <div className='bg-[#ffffff0d] py-[38px] rounded-2xl w-[231px] h-[199px]'>
                     <Image
                         src={macroPhotography.src}
