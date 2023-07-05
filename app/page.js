@@ -5,6 +5,7 @@ import MetalDescription from './components/MetalDescription/MetalDescription'
 import ExplainMetal from './components/ExplainMetal/ExplainMetal'
 import FeaturedCollection from './components/FeaturedCollection/FeaturedCollection'
 import Categories from './components/Categories/Categories'
+import Footer from './components/Footer/Footer'
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <ExplainMetal/>
       <FeaturedCollection/>
       <Categories/>
+      <Footer/>
     </div>
   )
 }
