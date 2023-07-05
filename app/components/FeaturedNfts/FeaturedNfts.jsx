@@ -111,30 +111,32 @@ const FeaturedNfts = () => {
                         {/* CARD THREE */}
 
                         <SwiperSlide>
-                            <div className='mb-4 relative'>
-                                <Image
-                                    src={image3.src}
-                                    width={image3.width}
-                                    height={image3.height}
-                                />
-                                <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 145</p>
-                            </div>
-                            <h2 className='capitalize mb-2 text-[30px]'>film element Con</h2>
-                            <div className='flex items-center gap-[6px]'>
-                                <Image
-                                    src={profile3.src}
-                                    width={profile3.width}
-                                    height={profile3.height}
-                                />
-                                <p>@Saiful.34</p>
-                            </div>
-                            <div className='border border-[#ffffff1a] my-4'></div>
-                            <div className='flex items-center justify-between'>
-                                <div>
-                                    <h3>278.0 Matic</h3>
-                                    <p>216.50 Usd</p>
+                            <div className='bg-[#ffffff0d] p-[18px] rounded-2xl w-[410px]'>
+                                <div className='mb-4 relative'>
+                                    <Image
+                                        src={image3.src}
+                                        width={image3.width}
+                                        height={image3.height}
+                                    />
+                                    <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 145</p>
                                 </div>
-                                <button className='btn_sm'>Buy Now</button>
+                                <h2 className='capitalize mb-2 text-[30px]'>film element Con</h2>
+                                <div className='flex items-center gap-[6px]'>
+                                    <Image
+                                        src={profile3.src}
+                                        width={profile3.width}
+                                        height={profile3.height}
+                                    />
+                                    <p>@Saiful.34</p>
+                                </div>
+                                <div className='border border-[#ffffff1a] my-4'></div>
+                                <div className='flex items-center justify-between'>
+                                    <div>
+                                        <h3>278.0 Matic</h3>
+                                        <p>216.50 Usd</p>
+                                    </div>
+                                    <button className='btn_sm'>Buy Now</button>
+                                </div>
                             </div>
                         </SwiperSlide>
                         {/* card FOUR */}
@@ -205,30 +207,32 @@ const FeaturedNfts = () => {
                         {/* CARD SIX */}
 
                         <SwiperSlide>
-                            <div className='mb-4 relative'>
-                                <Image
-                                    src={image3.src}
-                                    width={image3.width}
-                                    height={image3.height}
-                                />
-                                <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 145</p>
-                            </div>
-                            <h2 className='capitalize mb-2 text-[30px]'>film element Con</h2>
-                            <div className='flex items-center gap-[6px]'>
-                                <Image
-                                    src={profile3.src}
-                                    width={profile3.width}
-                                    height={profile3.height}
-                                />
-                                <p>@Saiful.34</p>
-                            </div>
-                            <div className='border border-[#ffffff1a] my-4'></div>
-                            <div className='flex items-center justify-between'>
-                                <div>
-                                    <h3>278.0 Matic</h3>
-                                    <p>216.50 Usd</p>
+                            <div className='bg-[#ffffff0d] p-[18px] rounded-2xl w-[410px]'>
+                                <div className='mb-4 relative'>
+                                    <Image
+                                        src={image3.src}
+                                        width={image3.width}
+                                        height={image3.height}
+                                    />
+                                    <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full flex items-center'><AiFillHeart className='text-[#CE2929]'></AiFillHeart> 145</p>
                                 </div>
-                                <button className='btn_sm'>Buy Now</button>
+                                <h2 className='capitalize mb-2 text-[30px]'>film element Con</h2>
+                                <div className='flex items-center gap-[6px]'>
+                                    <Image
+                                        src={profile3.src}
+                                        width={profile3.width}
+                                        height={profile3.height}
+                                    />
+                                    <p>@Saiful.34</p>
+                                </div>
+                                <div className='border border-[#ffffff1a] my-4'></div>
+                                <div className='flex items-center justify-between'>
+                                    <div>
+                                        <h3>278.0 Matic</h3>
+                                        <p>216.50 Usd</p>
+                                    </div>
+                                    <button className='btn_sm'>Buy Now</button>
+                                </div>
                             </div>
                         </SwiperSlide>
                     </Swiper>
