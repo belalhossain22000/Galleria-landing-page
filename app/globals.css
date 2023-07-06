@@ -36,9 +36,17 @@
   @apply mx-auto 2xl:max-w-[1320px] xl:max-w-[1280px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] px-4;
 }
 
+.section-title {
+  @apply xl:text-[44px] text-[36px]
+}
 
 .banner-bg {
   background: url(components/Banner/images/banner-pattern.png) top center no-repeat;
+  background-size: cover;
+}
+
+.footer-bg {
+  background: url(components/Footer/footer-bg.png) center center no-repeat;
   background-size: cover;
 }
 
@@ -57,36 +65,6 @@
   @apply bg-gradient-to-r from-[#9215C5] to-[#3116D2] text-base font-medium rounded-full py-[14px] px-[32px] inline-block transition hover:scale-[1.05] border-0;
 }
 
-
-/* .header-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 17px 35px;
-  box-sizing: border-box;
-  border-radius: 1000px;
-  color: #ffffff;
-  background: #291E4D;
-  background-clip: padding-box;
-  border: 1px solid transparent;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.header-btn:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -1px;
-  border-radius: inherit;
-  background: linear-gradient(to right, #9215C5, #3116D2);
-} */
-
 .mySwiper .swiper-button-prev{
   border-radius: 56px;
   border: #E7F0FB;
@@ -95,7 +73,6 @@
   width: 56px;
   height: 56px;
   color: #FFFFFF;
-  padding-right: 5px;
   margin-left: -4px;
 }
 .mySwiper .swiper-button-next {
@@ -106,8 +83,7 @@
   width: 56px;
   height: 56px;
   color: #FFFFFF;
-  padding-left: 5px;
-  margin-left: -4px;
+  margin-right: -4px;
 }
 .mySwiper .swiper-button-prev:hover{
   border-radius: 56px;
@@ -128,4 +104,7 @@
   padding-left: 5px;
 }
 
+.mySwiper .swiper-button-prev:after, .mySwiper .swiper-button-next:after {
+  font-size: 20px;
+}
 
