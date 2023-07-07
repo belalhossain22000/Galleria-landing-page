@@ -21,7 +21,7 @@ import nftLine from './images/nft-line.png'
 const FeaturedNfts = () => {
     return (
         <section className='py-[140px] relative z-10'>
-            <img className='absolute left-0 top-[-50%] -z-10' src={nftShadow.src} alt="" />
+            <img className='absolute left-0 md:top-[-50%] top-[-10%] -z-10' src={nftShadow.src} alt="" />
             <img className='absolute right-0 top-0 -z-10' src={nftShadowRight.src} alt="" />
             <img className='absolute right-0 top-[60%] -z-10' src={nftLine.src} alt="" />
             <div className='container'>
