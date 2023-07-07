@@ -4,10 +4,14 @@ import Slack from './images/slack.png'
 import Netflix from './images/netflix.png'
 import Google from './images/google.png'
 import Sony from './images/sony.png'
+import wave from './images/metal-prints-wave.png'
+import ShadowLeft from './images/metal-shadow-left.png'
 
 const Brands = () => {
   return (
     <section className='relative z-10'>
+        <img className='absolute top-[50%] -z-10' src={wave.src} alt="" />
+        <img className='absolute top-[-200%] -z-10' src={ShadowLeft.src} alt="" />
         <div className="container">
             <div className="relative bg-white/5 rounded-[16px] py-[60px] px-[50px]">
                 <h6 className='text-center text-[20px] mb-[40px]'>we have partnered with top commpanies</h6>

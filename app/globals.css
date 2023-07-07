@@ -37,11 +37,16 @@
 }
 
 .section-title {
-  @apply xl:text-[44px] text-[36px]
+  @apply xl:text-[44px] md:text-[36px] text-[32px]
 }
 
 .banner-bg {
   background: url(components/Banner/images/banner-pattern.png) top center no-repeat;
+  background-size: cover;
+}
+
+.featured-bg {
+  background: url(components/FeaturedCollection/images/featured-bg.png) center center no-repeat;
   background-size: cover;
 }
 
@@ -108,3 +113,6 @@
   font-size: 20px;
 }
 
+.offcanvas.active {
+  left: 0;
+}

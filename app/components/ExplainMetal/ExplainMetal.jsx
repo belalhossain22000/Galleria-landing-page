@@ -13,13 +13,20 @@ import image1 from './images/image_1.png'
 import image2 from './images/image_2.png'
 import image3 from './images/image_3.png'
 import Link from 'next/link';
+import explainShape from './images/explain-shape.png'
+import explainShadow from './images/explain-shadow.png'
+import explainLine from './images/explain-line.png'
+
 
 const ExplainMetal = () => {
     return (
-        <section className="mt-[60px] md:mt-[144px]">
+        <section className="pb-[140px] relative z-10">
+            <img className='absolute right-[28%] top-[-28%] -z-10' src={explainShape.src} alt="" />
+            <img className='absolute right-0 top-0 -z-10' src={explainShadow.src} alt="" />
+            <img className='absolute right-0 top-[80%] -z-10' src={explainLine.src} alt="" />
             <div className="container">
-                <div className="md:flex justify-between items-center mb-[30px] md:mb-[65px]">
-                    <h1 className="section-title">
+                <div className="lg:flex justify-between items-center lg:mb-[65px] mb-[30px] text-center lg:text-left">
+                    <h1 className="section-title mb-[15px] lg:mb-0">
                         Explain what the metal prints
                     </h1>
                     <Link href='/' className="primary-btn">Explore All Collection</Link>
@@ -56,14 +63,10 @@ const ExplainMetal = () => {
                         <SwiperSlide>
                             <div className='bg-[#ffffff0d] p-[18px] rounded-2xl'>
                                 <div className='mb-4 relative'>
-                                    <Image
-                                        src={roses.src}
-                                        width={roses.width}
-                                        height={roses.height}
-                                    />
+                                    <img className='w-full' src={roses.src} alt="" />
                                     <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>123 Collections</p>
                                 </div>
-                                <h2 className='capitalize mb-2 text-[30px]'>Red and blue roses</h2>
+                                <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>Red and blue roses</h2>
                                 <div className='flex items-center gap-[6px]'>
                                     <Image
                                         src={image1.src}
@@ -80,14 +83,10 @@ const ExplainMetal = () => {
                         <SwiperSlide>
                             <div className='bg-[#ffffff0d] p-[18px] rounded-2xl'>
                                 <div className='mb-4 relative'>
-                                    <Image
-                                        src={temple.src}
-                                        width={temple.width}
-                                        height={temple.height}
-                                    />
+                                    <img className='w-full' src={temple.src} alt="" />
                                     <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>56 Collections</p>
                                 </div>
-                                <h2 className='capitalize mb-2 text-[30px]'>People inside temple</h2>
+                                <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>People inside temple</h2>
                                 <div className='flex items-center gap-[6px]'>
                                     <Image
                                         src={image2.src}
@@ -103,14 +102,10 @@ const ExplainMetal = () => {
                         <SwiperSlide>
                             <div className='bg-[#ffffff0d] p-[18px] rounded-2xl'>
                                 <div className='mb-4 relative'>
-                                    <Image
-                                        src={building.src}
-                                        width={building.width}
-                                        height={building.height}
-                                    />
+                                    <img className='w-full' src={building.src} alt="" />
                                     <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>234 Collections</p>
                                 </div>
-                                <h2 className='capitalize mb-2 text-[30px]'>Ceiling of a building</h2>
+                                <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>Ceiling of a building</h2>
                                 <div className='flex items-center gap-[6px]'>
                                     <Image
                                         src={image3.src}
@@ -126,14 +121,10 @@ const ExplainMetal = () => {
                         <SwiperSlide>
                             <div className='bg-[#ffffff0d] p-[18px] rounded-2xl'>
                                 <div className='mb-4 relative'>
-                                    <Image
-                                        src={roses.src}
-                                        width={roses.width}
-                                        height={roses.height}
-                                    />
+                                    <img className='w-full' src={roses.src} alt="" />
                                     <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>123 Collections</p>
                                 </div>
-                                <h2 className='capitalize mb-2 text-[30px]'>Red and blue roses</h2>
+                                <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>Red and blue roses</h2>
                                 <div className='flex items-center gap-[6px]'>
                                     <Image
                                         src={image1.src}
@@ -150,14 +141,10 @@ const ExplainMetal = () => {
                         <SwiperSlide>
                             <div className='bg-[#ffffff0d] p-[18px] rounded-2xl'>
                                 <div className='mb-4 relative'>
-                                    <Image
-                                        src={temple.src}
-                                        width={temple.width}
-                                        height={temple.height}
-                                    />
+                                    <img className='w-full' src={temple.src} alt="" />
                                     <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>56 Collections</p>
                                 </div>
-                                <h2 className='capitalize mb-2 text-[30px]'>People inside temple</h2>
+                                <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>People inside temple</h2>
                                 <div className='flex items-center gap-[6px]'>
                                     <Image
                                         src={image2.src}
@@ -173,14 +160,10 @@ const ExplainMetal = () => {
                         <SwiperSlide>
                             <div className='bg-[#ffffff0d] p-[18px] rounded-2xl'>
                                 <div className='mb-4 relative'>
-                                    <Image
-                                        src={building.src}
-                                        width={building.width}
-                                        height={building.height}
-                                    />
+                                    <img className='w-full' src={building.src} alt="" />
                                     <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>234 Collections</p>
                                 </div>
-                                <h2 className='capitalize mb-2 text-[30px]'>Ceiling of a building</h2>
+                                <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>Ceiling of a building</h2>
                                 <div className='flex items-center gap-[6px]'>
                                     <Image
                                         src={image3.src}
