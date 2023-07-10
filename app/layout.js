@@ -18,6 +18,11 @@ export default function RootLayout({ children }) {
       offset: 50,
     });
   }, []);
+
+  useEffect(() => {
+    Aos.refresh()
+  }, [])
+  
   return (
     <html lang="en">
       <Header />
