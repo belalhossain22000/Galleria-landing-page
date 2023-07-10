@@ -20,6 +20,7 @@ import image8 from './images/blue_smoke/image_3.png'
 import image9 from './images/blue_smoke/image_4.png'
 import image10 from './images/blue_smoke/image_5.png'
 import featuredLine from './images/featured-line.png'
+import featuredShadow from './images/featured-shadow.png'
 
 import { AiFillHeart } from "react-icons/ai";
 import { BsCheck } from "react-icons/bs";
@@ -30,13 +31,14 @@ const FeaturedCollection = () => {
     return (
         <section className='featured-bg py-[120px] relative z-10'>
             <img className='absolute left-0 top-[70%] -z-10' src={featuredLine.src} alt="" />
+            <img className='absolute left-0 md:top-[20%] top-[20%] -z-10' src={featuredShadow.src} alt="" />
             <div className="container">
-                <h1 className="section-title text-center lg:mb-[65px] mb-[30px]">Featured Collections</h1>
+                <h1 className="section-title text-center lg:mb-[65px] mb-[30px]" data-aos='zoom-in'>Featured Collections</h1>
                 <div className='mb-[30px] md:mb-[65px]'>
 
                     {/* DESKTOP DEVICE */}
 
-                    <div>
+                    <div data-aos='zoom-in' data-aos-delay="300">
                         <Swiper
                             spaceBetween={30}
                             loop={true}

@@ -2,11 +2,13 @@ import Link from 'next/link'
 import FooterLogo from '../Header/logo.png'
 import { FaPhone, FaEnvelope, FaLocationDot, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa6"
 import FooterShadow from './footer-shadow.png'
+import footerShape from './footer-shape.png'
 
 const Footer = () => {
   return (
-    <footer className='footer-bg relative z-10 overflow-hidden'>
+    <footer className='footer-bg relative z-10'>
         <img className='absolute bottom-0 left-1/2 translate-x-[-50%] -z-10' src={FooterShadow.src} alt="" />
+        <img className='absolute left-0 md:top-[-30%] top-[-10%] -z-10' src={footerShape.src} alt="" />
         <div className="container">
             <div className="lg:grid grid-cols-2 items-center pt-[100px] pb-[80px] border-b border-[#660997]">
                 <div className='mb-[30px] lg:mb-0'>

@@ -14,18 +14,16 @@ import profile1 from './images/profile_1.png'
 import profile2 from './images/profile_2.png'
 import profile3 from './images/profile_3.png'
 import { AiFillHeart } from 'react-icons/ai';
-import nftShadow from './images/nft-shadow.png'
 import nftShadowRight from './images/nft-shadow-right.png'
 import nftLine from './images/nft-line.png'
 
 const FeaturedNfts = () => {
     return (
         <section className='py-[140px] relative z-10'>
-            <img className='absolute left-0 md:top-[-50%] top-[-10%] -z-10' src={nftShadow.src} alt="" />
             <img className='absolute right-0 top-0 -z-10' src={nftShadowRight.src} alt="" />
             <img className='absolute right-0 top-[60%] -z-10' src={nftLine.src} alt="" />
             <div className='container'>
-                <div className="md:flex justify-between items-center mb-[30px] md:mb-[65px]">
+                <div className="md:flex justify-between items-center mb-[30px] md:mb-[65px]" data-aos='zoom-in'>
                     <h1 className="text-3xl md:text-[44px] mb-5 md:mb-0 text-center md:text-start">
                         Featured NFTs
                     </h1>
@@ -33,7 +31,7 @@ const FeaturedNfts = () => {
                         <Link href='/' className="primary-btn">Explore All Collection</Link>
                     </div>
                 </div>
-                <div>
+                <div data-aos='zoom-in' data-aos-delay="300">
                     <Swiper
                         spaceBetween={30}
                         loop={true}

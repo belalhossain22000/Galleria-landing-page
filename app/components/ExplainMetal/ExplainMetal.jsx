@@ -25,7 +25,7 @@ const ExplainMetal = () => {
             <img className='absolute right-0 top-0 -z-10' src={explainShadow.src} alt="" />
             <img className='absolute right-0 top-[80%] -z-10' src={explainLine.src} alt="" />
             <div className="container">
-                <div className="lg:flex justify-between items-center lg:mb-[65px] mb-[30px] text-center lg:text-left">
+                <div className="lg:flex justify-between items-center lg:mb-[65px] mb-[30px] text-center lg:text-left" data-aos='zoom-in'>
                     <h1 className="section-title mb-[15px] lg:mb-0">
                         Explain what the metal prints
                     </h1>
@@ -34,7 +34,7 @@ const ExplainMetal = () => {
 
                 {/* DESKTOP DEVICE */}
 
-                <div>
+                <div data-aos='zoom-in' data-aos-delay="300">
                     <Swiper
                         spaceBetween={30}
                         loop={true}

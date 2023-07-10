@@ -9,15 +9,14 @@ import streetphotography from './images/streetphotography.png'
 import abstract from './images/abstract.png'
 import aerial from './images/aerial.png'
 import { FaArrowRight } from 'react-icons/fa6'
-import categoryShape from './images/category-shape.png'
+
 
 const Categories = () => {
     return (
         <section className='pb-[140px] relative z-10'>
-            <img className='absolute left-0 top-[70%] -z-10' src={categoryShape.src} alt="" />
             <div className='container text-center'>
-                <h1 className='section-title lg:mb-[65px] mb-[30px]'>Categories</h1>
-                <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-[40px] justify-center'>
+                <h1 className='section-title lg:mb-[65px] mb-[30px]' data-aos='zoom-in'>Categories</h1>
+                <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-[40px] justify-center' data-aos='zoom-in' data-aos-delay="300">
                     <div className='bg-[#ffffff0d] py-[38px] rounded-2xl'>
                         <Image
                             src={macroPhotography.src}
