@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import spider from './images/spider.png'
 import prints from './images/prints.png'
@@ -5,6 +6,7 @@ import shipped from './images/shipped.png'
 import worldwide from './images/worldwide.png'
 import sizes from './images/sizes.png'
 import ShadowRight from './images/shadow-shape-right.png'
+import Reveals from '@/app/utils/Reveals'
 
 const MetalDescription = () => {
     return (
@@ -15,23 +17,46 @@ const MetalDescription = () => {
                 <div className='lg:grid grid-cols-[6fr_6fr] items-center xl:gap-[115px] gap-[30px]'>
                     <div className='mb-[30px] lg:mb-0' data-aos='zoom-in'>
                         <div className='bg-white/5 p-[18px] rounded-2xl relative'>
-                            <img className='w-full' src={spider.src} alt="" />
+                            <Reveals>
+                                <img className='w-full' src={spider.src} alt="" />
+                            </Reveals>
                             <div className='absolute bottom-0 left-0 w-full p-[40px] xl:flex justify-between items-end'>
-                                <div>
-                                    <h3 className='text-[22px]'>Puerto Rico Spider</h3>
-                                    <h4 className='text-base'>Krishnaprasad.eth</h4>
-                                    <p className='text-sm'>NFT Address:</p>
-                                    <p className='text-xs'>oxb794f5ca0ba39494cc83961300ca742795268</p>
-                                    <p className='text-sm'>TokenID: 467</p>
-                                </div>
-                                <div>   
-                                    <p className='text-sm'>Certified NFT | Galleria</p>
-                                    <p className='text-xs'>Thegalleria.io</p>
-                                </div>
+                                <Reveals>
+
+                                    <div>
+                                        <Reveals>
+
+                                            <h3 className='text-[22px]'>Puerto Rico Spider</h3>
+                                        </Reveals>
+                                        <Reveals>
+
+                                            <h4 className='text-base'>Krishnaprasad.eth</h4>
+                                        </Reveals>
+                                        <Reveals>
+
+                                            <p className='text-sm'>NFT Address:</p>
+                                        </Reveals>
+                                        <Reveals>
+
+                                            <p className='text-xs'>oxb794f5ca0ba39494cc83961300ca742795268</p>
+                                        </Reveals>
+                                        <Reveals>
+
+                                            <p className='text-sm'>TokenID: 467</p>
+                                        </Reveals>
+                                    </div>
+                                </Reveals>
+                                <Reveals>
+                                    <div>
+                                        <p className='text-sm'>Certified NFT | Galleria</p>
+                                        <p className='text-xs'>Thegalleria.io</p>
+                                    </div>
+                                </Reveals>
                             </div>
                         </div>
                     </div>
                     <div className='grid sm:grid-cols-2 xl:gap-[45px] gap-[15px] text-center mt-5 md:mt-0' data-aos='zoom-in' data-aos-delay="300">
+
                         <div className='px-6 py-10 bg-white/5 rounded-2xl'>
                             <div className='bg-[#ffffff1a] w-[82px] h-[82px] rounded-full grid items-center mx-auto mb-5'>
                                 <Image
@@ -41,7 +66,12 @@ const MetalDescription = () => {
                                     className='mx-auto my-auto'
                                 />
                             </div>
+                            <div className='flex justify-center'>
+                                <Reveals>
+                                    
                             <h4 className='xl:text-[22px] text-[18px] leading-[33px]'>Limited Edition <br /> High Quality Metal Prints</h4>
+                                </Reveals>
+                            </div>
                         </div>
                         <div className='px-6 py-10 bg-white/5 rounded-2xl'>
                             <div className='bg-[#ffffff1a] w-[82px] h-[82px] rounded-full grid items-center mx-auto mb-5'>
@@ -52,7 +82,11 @@ const MetalDescription = () => {
                                     className='my-auto mx-auto'
                                 />
                             </div>
-                            <h4 className='xl:text-[22px] text-[18px] leading-[33px]'>Shipped <br /> To Collectors</h4>
+                            <div className='flex justify-center'>
+                                <Reveals>
+                                    <h4 className='xl:text-[22px] text-[18px] leading-[33px]'>Shipped <br /> To Collectors</h4>
+                                </Reveals>
+                            </div>
                         </div>
                         <div className='px-6 py-10 bg-white/5 rounded-2xl'>
                             <div className='bg-[#ffffff1a] w-[82px] h-[82px] rounded-full grid items-center mx-auto mb-5'>
@@ -63,7 +97,12 @@ const MetalDescription = () => {
                                     className='my-auto mx-auto'
                                 />
                             </div>
+                            <div className='flex justify-center'>
+                                <Reveals>
+
                             <h4 className='xl:text-[22px] text-[18px] leading-[33px]'>Wolrdwide <br /> Shipping</h4>
+                                </Reveals>
+                            </div>
                         </div>
                         <div className='px-6 py-10 bg-white/5 rounded-2xl'>
                             <div className='bg-[#ffffff1a] w-[82px] h-[82px] rounded-full grid items-center mx-auto mb-5'>
@@ -74,7 +113,11 @@ const MetalDescription = () => {
                                     className='my-auto mx-auto'
                                 />
                             </div>
-                            <h4 className='xl:text-[22px] text-[18px] leading-[33px]'>Different Sizes <br /> Available</h4>
+                            <div className='flex justify-center'>
+                                <Reveals>
+                                    <h4 className='xl:text-[22px] text-[18px] leading-[33px]'>Different Sizes <br /> Available</h4>
+                                </Reveals>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,10 @@
+"use client"
 import Link from 'next/link'
 import FooterLogo from '../Header/logo.png'
 import { FaPhone, FaEnvelope, FaLocationDot, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa6"
 import FooterShadow from './footer-shadow.png'
 import footerShape from './footer-shape.png'
+import Reveals from '@/app/utils/Reveals'
 
 const Footer = () => {
   return (
@@ -12,14 +14,18 @@ const Footer = () => {
         <div className="container">
             <div className="lg:grid grid-cols-2 items-center pt-[100px] pb-[80px] border-b border-[#660997]">
                 <div className='mb-[30px] lg:mb-0'>
+                    <Reveals>
                     <h3 className='xl:text-[36px] text-[32px] text-center lg:text-left'>Join Our Newsletter</h3>
+                    </Reveals>
                 </div>
+                <Reveals>
                 <form action="#">
                     <div className="mx-auto relative">
                         <input className="w-full rounded-full px-8 xl:leading-[78px] sm:leading-[66px] leading-[54px] bg-transparent border border-[#8C889B] text-[#767676] placeholder:text-[#767676]" type="email" placeholder="Enter your email address"/>
                         <button className="primary-btn relative sm:absolute xl:right-[12px] xl:top-[12px] w-full sm:w-auto sm:right-[7px] top-[7px] !pt-[14px] !pb-[14px] text-white" type="submit">Submit</button>
                     </div>
                 </form>
+                    </Reveals>
             </div>
             <div className="lg:grid grid-cols-[4fr_8fr] py-[100px] border-b border-[#660997]">
                 <div className='lg:pr-[100px] leading-7 mb-[30px] lg:mb-0'>
@@ -79,9 +85,9 @@ const Footer = () => {
                 </div>
                 <div>
                     <ul className="flex lg:justify-end justify-center text-white font-medium space-x-[15px]">
-                        <li><a href="#" class="h-[34px] w-[34px] flex items-center justify-center rounded-full bg-[#272842] text-[14px] hover:bg-gradient-to-r hover:from-[#9215C5] hover:to-[#3116D2]"><FaFacebookF/></a></li>
-                        <li><a href="#" class="h-[34px] w-[34px] flex items-center justify-center rounded-full bg-[#272842] text-[14px] hover:bg-gradient-to-r hover:from-[#9215C5] hover:to-[#3116D2]"><FaTwitter/></a></li>
-                        <li><a href="#" class="h-[34px] w-[34px] flex items-center justify-center rounded-full bg-[#272842] text-[14px] hover:bg-gradient-to-r hover:from-[#9215C5] hover:to-[#3116D2]"><FaInstagram/></a></li>
+                        <li><a href="#" className="h-[34px] w-[34px] flex items-center justify-center rounded-full bg-[#272842] text-[14px] hover:bg-gradient-to-r hover:from-[#9215C5] hover:to-[#3116D2]"><FaFacebookF/></a></li>
+                        <li><a href="#" className="h-[34px] w-[34px] flex items-center justify-center rounded-full bg-[#272842] text-[14px] hover:bg-gradient-to-r hover:from-[#9215C5] hover:to-[#3116D2]"><FaTwitter/></a></li>
+                        <li><a href="#" className="h-[34px] w-[34px] flex items-center justify-center rounded-full bg-[#272842] text-[14px] hover:bg-gradient-to-r hover:from-[#9215C5] hover:to-[#3116D2]"><FaInstagram/></a></li>
                     </ul>
                 </div>
             </div>

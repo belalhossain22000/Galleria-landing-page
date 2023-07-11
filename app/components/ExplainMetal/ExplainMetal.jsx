@@ -16,6 +16,7 @@ import Link from 'next/link';
 import explainShape from './images/explain-shape.png'
 import explainShadow from './images/explain-shadow.png'
 import explainLine from './images/explain-line.png'
+import Reveals from '@/app/utils/Reveals';
 
 
 const ExplainMetal = () => {
@@ -26,10 +27,14 @@ const ExplainMetal = () => {
             <img className='absolute right-0 top-[80%] -z-10' src={explainLine.src} alt="" />
             <div className="container">
                 <div className="lg:flex justify-between items-center lg:mb-[65px] mb-[30px] text-center lg:text-left" data-aos='zoom-in'>
-                    <h1 className="section-title mb-[15px] lg:mb-0">
-                        Explain what the metal prints
-                    </h1>
-                    <Link href='/' className="primary-btn">Explore All Collection</Link>
+                    <Reveals>
+                        <h1 className="section-title mb-[15px] lg:mb-0">
+                            Explain what the metal prints
+                        </h1>
+                    </Reveals>
+                    <Reveals>
+                        <Link href='/' className="primary-btn">Explore All Collection</Link>
+                    </Reveals>
                 </div>
 
                 {/* DESKTOP DEVICE */}
@@ -47,14 +52,14 @@ const ExplainMetal = () => {
                         breakpoints={{
                             // when window width is >= 640px
                             640: {
-                              slidesPerView: 1,
+                                slidesPerView: 1,
                             },
                             // when window width is >= 768px
                             768: {
-                              slidesPerView: 2,
+                                slidesPerView: 2,
                             },
                             1024: {
-                              slidesPerView: 3,
+                                slidesPerView: 3,
                             },
                         }}
                     >
@@ -62,19 +67,25 @@ const ExplainMetal = () => {
                         {/* CARD ONE */}
                         <SwiperSlide>
                             <div className='bg-[#ffffff0d] p-[18px] rounded-2xl'>
-                                <div className='mb-4 relative'>
-                                    <img className='w-full' src={roses.src} alt="" />
-                                    <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>123 Collections</p>
-                                </div>
-                                <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>Red and blue roses</h2>
-                                <div className='flex items-center gap-[6px]'>
-                                    <Image
-                                        src={image1.src}
-                                        width={image1.width}
-                                        height={image1.height}
-                                    />
-                                    <p>@minhaj.udding</p>
-                                </div>
+                                <Reveals>
+                                    <div className='mb-4 relative'>
+                                        <img className='w-full' src={roses.src} alt="" />
+                                        <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>123 Collections</p>
+                                    </div>
+                                </Reveals>
+                                <Reveals>
+                                    <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>Red and blue roses</h2>
+                                </Reveals>
+                                <Reveals>
+                                    <div className='flex items-center gap-[6px]'>
+                                        <Image
+                                            src={image1.src}
+                                            width={image1.width}
+                                            height={image1.height}
+                                        />
+                                        <p>@minhaj.udding</p>
+                                    </div>
+                                </Reveals>
                             </div>
                         </SwiperSlide>
 
@@ -82,96 +93,130 @@ const ExplainMetal = () => {
                         {/* CARD tWO */}
                         <SwiperSlide>
                             <div className='bg-[#ffffff0d] p-[18px] rounded-2xl'>
-                                <div className='mb-4 relative'>
-                                    <img className='w-full' src={temple.src} alt="" />
-                                    <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>56 Collections</p>
-                                </div>
-                                <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>People inside temple</h2>
-                                <div className='flex items-center gap-[6px]'>
-                                    <Image
-                                        src={image2.src}
-                                        width={image2.width}
-                                        height={image2.height}
-                                    />
-                                    <p>@Galleria.456</p>
-                                </div>
+                                <Reveals>
+                                    <div className='mb-4 relative'>
+                                        <img className='w-full' src={temple.src} alt="" />
+                                        <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>56 Collections</p>
+                                    </div>
+                                </Reveals>
+                                <Reveals>
+                                    <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>People inside temple</h2>
+                                </Reveals>
+                                <Reveals>
+                                    <div className='flex items-center gap-[6px]'>
+                                        <Image
+                                            src={image2.src}
+                                            width={image2.width}
+                                            height={image2.height}
+                                        />
+                                        <p>@Galleria.456</p>
+                                    </div>
+                                </Reveals>
                             </div>
                         </SwiperSlide>
+
 
                         {/* CARD THREE */}
                         <SwiperSlide>
                             <div className='bg-[#ffffff0d] p-[18px] rounded-2xl'>
-                                <div className='mb-4 relative'>
-                                    <img className='w-full' src={building.src} alt="" />
-                                    <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>234 Collections</p>
-                                </div>
-                                <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>Ceiling of a building</h2>
-                                <div className='flex items-center gap-[6px]'>
-                                    <Image
-                                        src={image3.src}
-                                        width={image3.width}
-                                        height={image3.height}
-                                    />
-                                    <p>@Farhad.udding</p>
-                                </div>
+                                <Reveals>
+                                    <div className='mb-4 relative'>
+                                        <img className='w-full' src={building.src} alt="" />
+                                        <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>234 Collections</p>
+                                    </div>
+                                </Reveals>
+                                <Reveals>
+                                    <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>Ceiling of a building</h2>
+                                </Reveals>
+                                <Reveals>
+                                    <div className='flex items-center gap-[6px]'>
+                                        <Image
+                                            src={image3.src}
+                                            width={image3.width}
+                                            height={image3.height}
+                                        />
+                                        <p>@Farhad.udding</p>
+                                    </div>
+                                </Reveals>
                             </div>
                         </SwiperSlide>
+
 
                         {/* CARD FOUR */}
                         <SwiperSlide>
                             <div className='bg-[#ffffff0d] p-[18px] rounded-2xl'>
-                                <div className='mb-4 relative'>
-                                    <img className='w-full' src={roses.src} alt="" />
-                                    <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>123 Collections</p>
-                                </div>
-                                <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>Red and blue roses</h2>
-                                <div className='flex items-center gap-[6px]'>
-                                    <Image
-                                        src={image1.src}
-                                        width={image1.width}
-                                        height={image1.height}
-                                    />
-                                    <p>@minhaj.udding</p>
-                                </div>
+                                <Reveals>
+                                    <div className='mb-4 relative'>
+                                        <img className='w-full' src={roses.src} alt="" />
+                                        <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>123 Collections</p>
+                                    </div>
+                                </Reveals>
+                                <Reveals>
+                                    <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>Red and blue roses</h2>
+                                </Reveals>
+                                <Reveals>
+                                    <div className='flex items-center gap-[6px]'>
+                                        <Image
+                                            src={image1.src}
+                                            width={image1.width}
+                                            height={image1.height}
+                                        />
+                                        <p>@minhaj.udding</p>
+                                    </div>
+                                </Reveals>
                             </div>
                         </SwiperSlide>
+
 
 
                         {/* CARD FIVE */}
                         <SwiperSlide>
                             <div className='bg-[#ffffff0d] p-[18px] rounded-2xl'>
-                                <div className='mb-4 relative'>
-                                    <img className='w-full' src={temple.src} alt="" />
-                                    <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>56 Collections</p>
-                                </div>
-                                <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>People inside temple</h2>
-                                <div className='flex items-center gap-[6px]'>
-                                    <Image
-                                        src={image2.src}
-                                        width={image2.width}
-                                        height={image2.height}
-                                    />
-                                    <p>@Galleria.456</p>
-                                </div>
+                                <Reveals>
+                                    <div className='mb-4 relative'>
+                                        <img className='w-full' src={temple.src} alt="" />
+                                        <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>56 Collections</p>
+                                    </div>
+                                </Reveals>
+                                <Reveals>
+                                    <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>People inside temple</h2>
+                                </Reveals>
+                                <Reveals>
+                                    <div className='flex items-center gap-[6px]'>
+                                        <Image
+                                            src={image2.src}
+                                            width={image2.width}
+                                            height={image2.height}
+                                        />
+                                        <p>@Galleria.456</p>
+                                    </div>
+                                </Reveals>
                             </div>
                         </SwiperSlide>
+
 
                         {/* CARD SIX */}
                         <SwiperSlide>
                             <div className='bg-[#ffffff0d] p-[18px] rounded-2xl'>
-                                <div className='mb-4 relative'>
-                                    <img className='w-full' src={building.src} alt="" />
-                                    <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>234 Collections</p>
-                                </div>
-                                <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>Ceiling of a building</h2>
-                                <div className='flex items-center gap-[6px]'>
-                                    <Image
-                                        src={image3.src}
-                                        width={image3.width}
-                                        height={image3.height}
-                                    />
-                                    <p>@Farhad.udding</p>
-                                </div>
+                                <Reveals>
+                                    <div className='mb-4 relative'>
+                                        <img className='w-full' src={building.src} alt="" />
+                                        <p className='absolute top-5 right-5 bg-[#FFFFFF] text-black text-base px-4 py-[6px] rounded-full'>234 Collections</p>
+                                    </div>
+                                </Reveals>
+                                <Reveals>
+                                    <h2 className='capitalize mb-2 xl:text-[30px] text-[24]'>Ceiling of a building</h2>
+                                </Reveals>
+                                <Reveals>
+                                    <div className='flex items-center gap-[6px]'>
+                                        <Image
+                                            src={image3.src}
+                                            width={image3.width}
+                                            height={image3.height}
+                                        />
+                                        <p>@Farhad.udding</p>
+                                    </div>
+                                </Reveals>
                             </div>
                         </SwiperSlide>
 
